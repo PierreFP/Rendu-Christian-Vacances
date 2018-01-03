@@ -1,0 +1,210 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+    padding: 35px 600px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 15px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 3;
+    color: cadetblue;
+}
+
+a.btn {
+    color: cadetblue;
+    border-radius: 4px;
+    background-color: gray;
+    font-weight: 800;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+
+@media (max-width: 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 80px 30px;
+    }
+}
+
+.acceuil {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background-image: url(gear-vr-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.acceuil h1 {
+    color: cadetblue;
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.acceuil h3 {
+    color: cadetblue;
+    margin-bottom: 40px;
+    font-size: 45px;
+}
+
+.btn {
+    padding: 20px 46px;
+}
+
+@media (max-width: 800px) {
+    .acceuil {
+        min-height: 600px;
+    }
+    .acceuil h1 {
+        font-size: 48px;
+    }
+    .acceuil h3 {
+        font-size: 24px;
+    }
+    .acceuil a.btn {
+        padding: 15px 40px;
+    }
+}
+
+.paragraphe .avis {
+    text-align: center;
+    width: 60%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 2.5;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+@media (max-width: 1000px) {
+    .reviews .quote {
+        font-size: 20px;
+    }
+    .reviews .author {
+        font-size: 16px;
+    }
+}
+
+input,
+select,
+textarea {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+input[type=submit] {
+    outline: 0;
+    padding: 5px 15px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.contact form input {
+    padding: 15px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.contact form .btn {
+    padding: 18px 42px;
+}
+
+@media (max-width: 800px) {
+    .contact form input {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+
+@keyframes movemydiv {
+    from {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(150px);
+    }
+
+    60% {
+        transform: translateX(150px) rotate(30deg);
+    }
+
+    80% {
+        transform: translate(100px, 80px) rotate(30deg);
+    }
+
+    to {
+        transform: translate(100px, 80px) rotate(30deg);
+        border-radius: 30px;
+        background-color: red;
+    }
+}
+
+.movemydiv
+{
+    margin: 100px;
+    width: 200px;
+    height: 150px;
+    background-color: cadetblue;
+    text-align: center;
+    color: gray;
+    
+}
+
+.movemydiv:hover
+{
+    animation: movemydiv 2s linear alternate infinite;
+}
